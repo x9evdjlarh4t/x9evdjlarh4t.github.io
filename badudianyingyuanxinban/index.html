@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>八度电影院新版影院-在线影厅与排片指南</title>
+<meta name="description" content="八度电影院新版影院提供影厅排片、杜比全景声与激光厅体验、会员购票规则和观影动线说明。覆盖 2026 年 11 月新片场次、退改签条款与亲子场次选择，帮助观众按片长与厅型安排一次顺畅的观影流程。">
+<meta name="keywords" content="八度电影院新版影院">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b2a'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23e8b04b' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23e8b04b'/%3E%3Ccircle cx='32' cy='15' r='3' fill='%23e8b04b'/%3E%3Ccircle cx='32' cy='49' r='3' fill='%23e8b04b'/%3E%3Ccircle cx='15' cy='32' r='3' fill='%23e8b04b'/%3E%3Ccircle cx='49' cy='32' r='3' fill='%23e8b04b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#0d1b2a;
+  --navy-2:#152a3e;
+  --ink:#1b2430;
+  --ink-soft:#3d4a58;
+  --gold:#e8b04b;
+  --gold-deep:#c98f26;
+  --red:#b3402f;
+  --bg:#f5f2ec;
+  --card:#ffffff;
+  --line:#ded7ca;
+  --line-strong:#c4baa8;
+  --ok:#2f6d4f;
+  --muted:#6b7684;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 4px rgba(13,27,42,.05),0 10px 26px rgba(13,27,42,.07);
+  --shadow-sm:0 1px 2px rgba(13,27,42,.06);
+  --font-serif:"Noto Serif SC","Songti SC",Georgia,serif;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --gap:18px;
+  --pad:22px;
+  --h-announce:40px;
+  --h-header:66px;
+  --stick:calc(var(--h-announce) + var(--h-header));
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-sans);
+  font-size:16px;
+  line-height:1.75;
+  padding-top:var(--stick);
+}
+img{max-width:100%;display:block}
+a{color:var(--navy-2);text-decoration:none}
+a:hover{color:var(--gold-deep)}
+:focus-visible{outline:3px solid var(--gold-deep);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{font-family:var(--font-serif);line-height:1.35;margin:0 0 .6em;color:var(--navy)}
+h1{font-size:clamp(1.7rem,3.4vw,2.6rem)}
+h2{font-size:clamp(1.3rem,2.2vw,1.65rem)}
+h3{font-size:1.06rem}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+li{margin-bottom:.35em}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ---------- 吸顶 ---------- */
+.sticky-wrap{position:fixed;top:0;left:0;right:0;z-index:60}
+.announce{
+  background:var(--navy);color:#e9e3d6;font-size:.82rem;height:var(--h-announce);
+  display:flex;align-items:center;gap:14px;padding:0 16px;overflow:hidden;
+  border-bottom:1px solid rgba(232,176,75,.35);
+}
+.announce .tag{
+  flex:0 0 auto;background:var(--gold);color:#12202e;font-weight:700;border-radius:4px;
+  padding:1px 7px;font-size:.72rem;letter-spacing:.04em;
+}
+.announce .brand-dot{color:var(--gold);font-weight:700;letter-spacing:.02em;flex:0 0 auto}
+.announce p{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.announce a{color:#f1d79a;border-bottom:1px dotted rgba(241,215,154,.5)}
+header.site{
+  height:var(--h-header);background:rgba(255,255,255,.96);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm);
+}
+.header-in{
+  max-width:var(--maxw);margin:0 auto;height:100%;padding:0 16px;
+  display:flex;align-items:center;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:36px;height:36px;flex:0 0 auto}
+.brand-name{font-family:var(--font-serif);font-weight:700;font-size:1.05rem;color:var(--navy);letter-spacing:.02em;line-height:1.2}
+.brand-sub{display:block;font-family:var(--font-sans);font-size:.66rem;color:var(--muted);letter-spacing:.16em;font-weight:400}
+nav.main{display:flex;gap:2px;flex:1 1 auto;overflow:hidden}
+nav.main a{
+  font-size:.86rem;padding:7px 10px;border-radius:6px;color:var(--ink-soft);white-space:nowrap;
+}
+nav.main a:hover,nav.main a.active{background:#f1ece1;color:var(--navy)}
+.header-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search-form{display:flex;align-items:center;border:1px solid var(--line-strong);border-radius:999px;background:#fff;padding:2px 3px 2px 12px}
+.search-form input{
+  border:0;outline:0;font-family:inherit;font-size:.82rem;width:132px;background:transparent;color:var(--ink);padding:5px 0;
+}
+.search-form button{
+  border:0;background:var(--navy);color:#fff;border-radius:999px;font-size:.76rem;padding:5px 12px;cursor:pointer;font-family:inherit;
+}
+.search-form button:hover{background:var(--navy-2)}
+.search-result{
+  position:absolute;top:calc(100% + 6px);right:0;width:min(340px,88vw);background:#fff;border:1px solid var(--line);
+  border-radius:10px;box-shadow:var(--shadow);padding:8px;font-size:.82rem;display:none;max-height:320px;overflow:auto;
+}
+.search-result.show{display:block}
+.search-result a{display:block;padding:6px 8px;border-radius:6px}
+.search-result a:hover{background:#f4efe4}
+.search-result .none{color:var(--red);padding:8px;margin:0}
+.btn-menu{display:none;border:1px solid var(--line-strong);background:#fff;border-radius:8px;padding:7px 9px;cursor:pointer;align-items:center;gap:6px;font-family:inherit;font-size:.82rem;color:var(--navy)}
+.btn-menu svg{width:16px;height:16px}
+
+@media (max-width:1080px){
+  nav.main{display:none}
+  nav.main.open{
+    display:flex;flex-direction:column;position:absolute;top:calc(var(--stick));left:0;right:0;
+    background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:10px 16px;gap:0;max-height:70vh;overflow:auto;
+  }
+  nav.main.open a{padding:10px 8px;border-radius:6px}
+  .btn-menu{display:inline-flex}
+}
+@media (max-width:620px){
+  .search-form input{width:92px}
+  .brand-sub{display:none}
+  .announce{font-size:.76rem;gap:8px}
+}
+
+/* ---------- 通用 ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+section{scroll-margin-top:calc(var(--stick) + 12px)}
+.sec{padding:38px 0;border-bottom:1px solid var(--line)}
+.sec:last-of-type{border-bottom:0}
+.sec-head{display:flex;align-items:flex-end;gap:14px;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+.sec-head h2{margin:0}
+.sec-kicker{font-size:.76rem;letter-spacing:.18em;color:var(--gold-deep);font-weight:700;text-transform:uppercase;margin:0 0 4px}
+.sec-desc{margin:0;color:var(--muted);font-size:.86rem;max-width:52ch}
+.chip{display:inline-block;font-size:.74rem;padding:2px 9px;border-radius:999px;background:#eee7d8;color:var(--ink-soft);border:1px solid var(--line)}
+.chip.gold{background:#fdf2d8;border-color:#e9d29b;color:#7a5a11}
+.chip.red{background:#fbe9e5;border-color:#e8bdb3;color:#8f2c1c}
+.chip.ok{background:#e7f1ea;border-color:#b9d3c1;color:#255a3e}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.card-pad{padding:var(--pad)}
+.hover-lift{transition:transform .18s ease,box-shadow .18s ease}
+.hover-lift:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:999px;font-size:.88rem;
+  font-family:inherit;cursor:pointer;border:1px solid transparent;transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-2);color:#fff}
+.btn-ghost{background:transparent;border-color:var(--line-strong);color:var(--navy)}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.meta-line{font-size:.76rem;color:var(--muted);letter-spacing:.02em}
+
+/* ---------- 首屏 ---------- */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0d1b2a 0%,#132b42 58%,#1b3b56 100%);color:#eae4d7}
+.hero .wrap{position:relative;z-index:2;padding-top:46px;padding-bottom:46px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center}
+.hero h1{color:#fff;margin-bottom:14px}
+.hero .lead{color:#cfc7b7;font-size:1rem;max-width:52ch}
+.hero .lead strong{color:var(--gold)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.hero-actions .btn-ghost{border-color:rgba(234,228,215,.45);color:#f1e9d9}
+.hero-actions .btn-ghost:hover{background:rgba(255,255,255,.08);color:#fff}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;margin-top:30px;border-top:1px solid rgba(234,228,215,.2);padding-top:18px}
+.hero-stats div{min-width:88px}
+.hero-stats b{display:block;font-family:var(--font-serif);font-size:1.5rem;color:var(--gold);line-height:1.1}
+.hero-stats span{font-size:.76rem;color:#b6ac99;letter-spacing:.06em}
+.hero-art{position:relative;height:330px}
+.hero-art svg{position:absolute;inset:0;width:100%;height:100%}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:32px;padding-bottom:34px}
+  .hero-art{height:250px;order:2}
+}
+@media (max-width:620px){
+  .hero-art{height:210px}
+  .hero-stats{gap:16px}
+}
+
+/* ---------- 主布局 ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:32px;align-items:start}
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr}
+  aside.side{order:2}
+}
+aside.side{display:flex;flex-direction:column;gap:18px}
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow-sm)}
+.side-card h3{font-size:.95rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.side-card h3::before{content:"";width:4px;height:16px;background:var(--gold);border-radius:2px;display:inline-block}
+.side-nav a{display:block;padding:6px 9px;font-size:.85rem;border-radius:6px;border-left:3px solid transparent;color:var(--ink-soft)}
+.side-nav a:hover{background:#f5f0e5}
+.side-nav a.cur{background:#f4eee0;border-left-color:var(--gold);color:var(--navy);font-weight:600}
+
+/* ---------- 概览 ---------- */
+.overview-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:var(--gap)}
+.ov-card{padding:18px;border-left:3px solid var(--gold);background:#fff;border-radius:var(--radius-sm);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ov-card h3{font-size:.95rem;margin-bottom:6px}
+.ov-card p{font-size:.85rem;color:var(--ink-soft);margin:0}
+.ov-card .num{font-family:var(--font-serif);color:var(--gold-deep);font-size:1.25rem;font-weight:700;margin-right:4px}
+
+/* ---------- 精选 ---------- */
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.feature-grid .span2{grid-column:span 2}
+@media (max-width:880px){
+  .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .feature-grid .span2{grid-column:span 2}
+}
+@media (max-width:560px){
+  .feature-grid{grid-template-columns:1fr}
+  .feature-grid .span2{grid-column:span 1}
+}
+.f-card{overflow:hidden;display:flex;flex-direction:column}
+.f-card img{width:100%;height:170px;object-fit:cover}
+.f-card .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.f-card h3{margin:0;font-size:1rem}
+.f-card p{font-size:.85rem;color:var(--ink-soft);margin:0}
+.f-card .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;font-size:.76rem;color:var(--muted);gap:8px}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+
+/* ---------- 最新更新 ---------- */
+.timeline{list-style:none;margin:0;padding:0;position:relative;border-left:2px solid var(--line-strong);margin-left:6px}
+.timeline li{position:relative;padding:0 0 18px 22px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--gold)}
+.timeline time{font-size:.76rem;color:var(--gold-deep);font-weight:700;letter-spacing:.03em;display:block}
+.timeline strong{display:block;font-size:.93rem;color:var(--navy);margin:2px 0 3px}
+.timeline p{font-size:.85rem;color:var(--ink-soft);margin:0}
+
+/* ---------- 分类 ---------- */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.cat-item{display:flex;flex-direction:column;gap:2px;padding:14px 16px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);transition:transform .15s ease,border-color .15s ease}
+.cat-item:hover{transform:translateY(-2px);border-color:var(--gold)}
+.cat-item b{font-size:.92rem;color:var(--navy)}
+.cat-item span{font-size:.76rem;color:var(--muted)}
+
+/* ---------- 深度解析 ---------- */
+.analysis{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,34px);box-shadow:var(--shadow-sm)}
+.analysis .lead-p{font-size:1.02rem;color:var(--ink);font-weight:500}
+.analysis h3{margin-top:1.4em;padding-top:.2em}
+.analysis h3:first-of-type{margin-top:0}
+.callout{background:#f8f3e7;border-left:4px solid var(--gold);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:14px 18px;margin:18px 0;font-size:.9rem}
+.callout p:last-child{margin-bottom:0}
+.compare{width:100%;border-collapse:collapse;font-size:.84rem;margin:14px 0}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.compare th{background:#f1ece1;color:var(--navy);font-family:var(--font-serif)}
+.compare tr:nth-child(even) td{background:#fbf9f4}
+.fact-check{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:16px 0}
+.fc{padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--line);background:#fbf9f4}
+.fc b{display:block;font-size:.78rem;letter-spacing:.08em;margin-bottom:4px}
+.fc.fact b{color:var(--ok)}
+.fc.reply b{color:var(--gold-deep)}
+.fc.repeat b{color:#5b6a86}
+.fc.guess b{color:var(--red)}
+.fc p{margin:0;font-size:.83rem;color:var(--ink-soft)}
+
+/* ---------- 体验指南（编号步骤） ---------- */
+.steps{counter-reset:st;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:st;position:relative;padding:14px 16px 14px 58px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm)}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);position:absolute;left:14px;top:13px;
+  font-family:var(--font-serif);font-size:1.15rem;font-weight:700;color:var(--gold-deep);
+  width:32px;height:32px;border-radius:50%;background:#fdf2d8;display:flex;align-items:center;justify-content:center;font-size:.9rem;
+}
+.steps b{display:block;font-size:.92rem;color:var(--navy);margin-bottom:2px}
+.steps p{margin:0;font-size:.85rem;color:var(--ink-soft)}
+
+/* ---------- FAQ ---------- */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:14px 18px;font-weight:600;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:.92rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-sans);color:var(--gold-deep);font-size:1.15rem;line-height:1;transition:transform .2s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details[open] summary{border-bottom:1px solid var(--line);background:#fbf8f1}
+.faq .ans{padding:14px 18px;font-size:.87rem;color:var(--ink-soft)}
+.faq .ans p:last-child{margin-bottom:0}
+
+/* ---------- 评论 ---------- */
+.comments{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.cm{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px;display:flex;flex-direction:column;gap:8px}
+.cm .who{display:flex;align-items:center;gap:9px}
+.avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(140deg,var(--navy),#2c5474);color:#f0d9a3;display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;flex:0 0 auto}
+.cm .name{font-size:.82rem;font-weight:600;color:var(--navy)}
+.cm .when{font-size:.72rem;color:var(--muted)}
+.cm p{margin:0;font-size:.85rem;color:var(--ink-soft)}
+.cm .bind{font-size:.74rem;color:var(--gold-deep);font-weight:600}
+
+/* ---------- 相关资讯 ---------- */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--gap)}
+.news-item{padding:16px 18px;display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm)}
+.news-item .src{font-size:.74rem;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.news-item h3{margin:0;font-size:.94rem}
+.news-item p{margin:0;font-size:.82rem;color:var(--ink-soft)}
+
+/* ---------- 推荐标签 ---------- */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:9px}
+.tag-cloud a{font-size:.84rem;padding:6px 13px;border-radius:999px;background:#fff;border:1px solid var(--line-strong);color:var(--ink-soft);transition:all .15s ease}
+.tag-cloud a:hover{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-2px)}
+
+/* ---------- 榜单 ---------- */
+.rank{list-style:none;padding:0;margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank li{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:13px 18px;border-bottom:1px solid var(--line)}
+.rank li:last-child{border-bottom:0}
+.rank .no{font-family:var(--font-serif);font-size:1.1rem;font-weight:700;color:var(--line-strong)}
+.rank li:nth-child(-n+3) .no{color:var(--gold-deep)}
+.rank .t b{display:block;font-size:.9rem;color:var(--navy)}
+.rank .t span{font-size:.77rem;color:var(--muted)}
+.rank .v{font-size:.78rem;color:var(--ink-soft);text-align:right}
+
+/* ---------- 页脚 ---------- */
+footer.site{background:var(--navy);color:#c7bfaf;margin-top:20px;padding:44px 0 26px;font-size:.85rem}
+footer .cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:26px}
+@media (max-width:860px){footer .cols{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){footer .cols{grid-template-columns:1fr}}
+footer h4{color:#f0e6d2;font-size:.85rem;letter-spacing:.12em;font-family:var(--font-sans);margin-bottom:10px}
+footer a{color:#c7bfaf}
+footer a:hover{color:var(--gold)}
+footer .f-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+footer .f-brand svg{width:32px;height:32px}
+footer .f-brand b{font-family:var(--font-serif);font-size:1.05rem;color:#fff}
+footer .f-note{color:#9a9282;font-size:.8rem;line-height:1.8}
+footer .f-note strong{color:#d8c9a8;font-weight:600}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:6px}
+.foot-bottom{margin-top:30px;padding-top:18px;border-top:1px solid rgba(199,191,175,.22);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.76rem;color:#938b7b}
+
+/* ---------- 回到顶部 ---------- */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:55;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line-strong);background:#fff;color:var(--navy);cursor:pointer;
+  box-shadow:var(--shadow);display:none;align-items:center;justify-content:center;
+}
+#toTop.show{display:flex}
+#toTop:hover{background:var(--gold);border-color:var(--gold-deep);color:#12202e}
+@media (max-width:620px){#toTop{right:12px;bottom:14px;width:40px;height:40px}}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce" id="announce">
+    <span class="tag">更新</span>
+    <span class="brand-dot">八度电影院 · 公告</span>
+    <p>11 月 6 日新增杜比厅《雪线之上》22:10 场，会员积分兑换暂停至 11 月 12 日；<a href="/#latest">查看全部排片变动</a></p>
+  </div>
+  <header class="site">
+    <div class="header-in">
+      <a class="brand" href="/#top" aria-label="八度电影院新版影院 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#0d1b2a"/>
+          <circle cx="32" cy="32" r="17" fill="none" stroke="#e8b04b" stroke-width="3.5"/>
+          <circle cx="32" cy="32" r="5.5" fill="#e8b04b"/>
+          <circle cx="32" cy="15" r="2.8" fill="#e8b04b"/>
+          <circle cx="32" cy="49" r="2.8" fill="#e8b04b"/>
+          <circle cx="15" cy="32" r="2.8" fill="#e8b04b"/>
+          <circle cx="49" cy="32" r="2.8" fill="#e8b04b"/>
+          <circle cx="20" cy="20" r="2" fill="#9fb6cc"/>
+          <circle cx="44" cy="44" r="2" fill="#9fb6cc"/>
+        </svg>
+        <span>
+          <span class="brand-name">八度电影院</span>
+          <span class="brand-sub">新版影院 · 影厅排片</span>
+        </span>
+      </a>
+      <button class="btn-menu" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        频道
+      </button>
+      <nav class="main" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">影厅概览</a>
+        <a href="/#featured">本月精选</a>
+        <a href="/#latest">排片变动</a>
+        <a href="/#categories">片单分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">购票指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">观众评论</a>
+      </nav>
+      <div class="header-tools">
+        <div style="position:relative">
+          <form class="search-form" id="searchForm" role="search" autocomplete="off">
+            <label class="sr-only" for="q">站内查找片名或厅型</label>
+            <input id="q" type="search" placeholder="查片名 / 厅型">
+            <button type="submit">查找</button>
+          </form>
+          <div class="search-result" id="searchResult" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <div>
+        <span class="chip gold">2026 年 11 月排片 · 江北店 / 星港店</span>
+        <h1 id="heroTitle">八度电影院新版影院</h1>
+        <p class="lead">两店共 <strong>8 个影厅</strong>、<strong>1 块激光 IMAX 幕</strong>，11 月 8 日当天排映 34 场。厅型分为杜比全景声厅、激光厅与亲子软座厅，公众号“八度排片”每日 18:00 更新次日场次，退改签规则按开场前 30 分钟与 15 分钟两档执行。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#latest">看今日剩余场次</a>
+          <a class="btn btn-ghost" href="/#guide">购票与退改说明</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>8</b><span>在营影厅</span></div>
+          <div><b>34</b><span>11/8 当日场次</span></div>
+          <div><b>2</b><span>门店</span></div>
+          <div><b>18:00</b><span>次日排片发布</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 330" role="img">
+          <defs>
+            <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8b04b" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#e8b04b" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect x="16" y="24" width="388" height="196" rx="12" fill="#0a1622" stroke="#2b4a63"/>
+          <rect x="34" y="42" width="352" height="150" rx="6" fill="#122a3d"/>
+          <polygon points="34,192 386,192 300,60 120,60" fill="url(#beam)"/>
+          <circle cx="210" cy="118" r="44" fill="none" stroke="#e8b04b" stroke-width="3"/>
+          <circle cx="210" cy="118" r="7" fill="#e8b04b"/>
+          <circle cx="210" cy="74" r="3.2" fill="#e8b04b"/>
+          <circle cx="210" cy="162" r="3.2" fill="#e8b04b"/>
+          <circle cx="166" cy="118" r="3.2" fill="#e8b04b"/>
+          <circle cx="254" cy="118" r="3.2" fill="#e8b04b"/>
+          <text x="34" y="176" font-size="11" fill="#7f9bb3" font-family="sans-serif">LASER  ·  DOLBY  ·  IMAX</text>
+          <g fill="#1d3a52">
+            <rect x="30" y="236" width="60" height="18" rx="5"/>
+            <rect x="100" y="236" width="60" height="18" rx="5"/>
+            <rect x="170" y="236" width="60" height="18" rx="5"/>
+            <rect x="240" y="236" width="60" height="18" rx="5"/>
+            <rect x="310" y="236" width="60" height="18" rx="5"/>
+            <rect x="60" y="264" width="60" height="18" rx="5"/>
+            <rect x="130" y="264" width="60" height="18" rx="5"/>
+            <rect x="200" y="264" width="60" height="18" rx="5"/>
+            <rect x="270" y="264" width="60" height="18" rx="5"/>
+          </g>
+          <g fill="#e8b04b" opacity=".85">
+            <circle cx="60" cy="245" r="3"/><circle cx="130" cy="245" r="3"/><circle cx="200" cy="245" r="3"/>
+            <circle cx="270" cy="245" r="3"/><circle cx="340" cy="245" r="3"/>
+            <circle cx="90" cy="273" r="3"/><circle cx="160" cy="273" r="3"/><circle cx="230" cy="273" r="3"/><circle cx="300" cy="273" r="3"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- 主内容 -->
+      <div>
+
+        <!-- 1 领域概览 -->
+        <section class="sec" id="overview" aria-labelledby="overviewTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Overview</p>
+              <h2 id="overviewTitle">影厅概览：两店八厅的硬件分工</h2>
+            </div>
+            <p class="sec-desc">江北店 5 厅偏重巨幕与音效，星港店 3 厅偏重小厅与亲子。</p>
+          </div>
+          <div class="overview-grid">
+            <div class="ov-card">
+              <h3><span class="num">01</span>激光 IMAX 厅</h3>
+              <p>江北店 1 号厅，幕宽 22 米，388 座。11 月 8 日排 5 场，片单以《雪线之上》《雾港回声》为主，散场最晚 23:40。</p>
+            </div>
+            <div class="ov-card">
+              <h3><span class="num">02</span>杜比全景声厅</h3>
+              <p>江北店 2、3 号厅，各 176 座，64 声道。动作片集中安排在此，映前广告 3 分 20 秒，正片前留 8 分钟入场窗口。</p>
+            </div>
+            <div class="ov-card">
+              <h3><span class="num">03</span>激光 2K 厅</h3>
+              <p>星港店 1、2 号厅，各 122 座。票价区间 39—59 元，工作日下午场普遍低于 45 元，适合二刷与临时购票。</p>
+            </div>
+            <div class="ov-card">
+              <h3><span class="num">04</span>亲子软座厅</h3>
+              <p>星港店 3 号厅，96 座，前两排为可调节软座，配 12 张儿童增高垫。10:30 与 14:00 两场固定设为亲子场。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 精选推荐 -->
+        <section class="sec" id="featured" aria-labelledby="featuredTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Featured</p>
+              <h2 id="featuredTitle">本月精选片单与观影片目</h2>
+            </div>
+            <a class="btn btn-ghost" href="/#categories">进入完整片单</a>
+          </div>
+          <div class="feature-grid">
+            <article class="card f-card span2 hover-lift">
+              <img src="https://picsum.photos/seed/badu-snowline/760/300" width="760" height="300" loading="lazy" alt="雪线之上：雪山救援队夜间行进的剧照氛围图">
+              <div class="body">
+                <div class="tag-row"><span class="chip gold">IMAX 主打</span><span class="chip">152 分钟</span><span class="chip">救援题材</span></div>
+                <h3>《雪线之上》：杜比厅与 IMAX 厅差异在哪</h3>
+                <p>同一部片在两厅的差异主要落在画面比例与低频：IMAX 版为 1.90:1 画幅，杜比厅为 2.39:1。山顶雪崩段在 IMAX 厅多出约 18% 的上下画面，杜比厅则把声音细节集中在风的方位感上。</p>
+                <div class="foot"><span>11 月 6 日 22:10 加场</span><span>江北店 · 1 号厅 / 2 号厅</span></div>
+              </div>
+            </article>
+            <article class="card f-card hover-lift">
+              <img src="https://picsum.photos/seed/badu-fogbay/400/300" width="400" height="300" loading="lazy" alt="雾港回声：海港夜雾与旧仓库的画面">
+              <div class="body">
+                <div class="tag-row"><span class="chip">悬疑</span><span class="chip">126 分钟</span></div>
+                <h3>《雾港回声》排片压缩到 3 场</h3>
+                <p>11 月 8 日仅 12:40、18:20、21:30 三场，其中 18:20 一场在星港店 2 号厅，散场 20:26。</p>
+              </div>
+            </article>
+            <article class="card f-card hover-lift">
+              <img src="https://picsum.photos/seed/badu-bamboo/400/300" width="400" height="300" loading="lazy" alt="竹林里的小号手：动画角色站在竹林月下的画面">
+              <div class="body">
+                <div class="tag-row"><span class="chip ok">亲子场</span><span class="chip">98 分钟</span></div>
+                <h3>《竹林里的小号手》含两场亲子软座</h3>
+                <p>10:30 与 14:00 两场提供增高垫，音量比普通场低 3dB，影厅灯带保留 20% 亮度。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="sec" id="latest" aria-labelledby="latestTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Schedule</p>
+              <h2 id="latestTitle">排片变动与场次更新</h2>
+            </div>
+            <p class="sec-desc">公众号“八度排片”每日 18:00 发布次日表；下列为 11 月 6 日至 8 日的可核对变更。</p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time datetime="2026-11-08">11 月 8 日 · 今天</time>
+              <strong>1 号厅 22:10 加开《雪线之上》</strong>
+              <p>因 11 月 7 日 20:20 场次开票 26 分钟售罄，增排一场，票价与正场一致，会员不额外加价。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-07">11 月 7 日 · 昨天</time>
+              <strong>星港店 3 号厅 14:00 亲子场提前 10 分钟入场</strong>
+              <p>改用分批入场：持 A 排至 F 排票的观众 13:50 进场，其余 13:56 进场，减少过道拥堵。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-06">11 月 6 日</time>
+              <strong>《雾港回声》星港店场次由 5 场减至 3 场</strong>
+              <p>原 09:50 与 15:10 两场撤下，已购票观众收到短信与小程序内退票通知，款项原路返回，平均到账 2 小时 40 分。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-05">11 月 5 日</time>
+              <strong>江北店 2 号厅音响校准完成</strong>
+              <p>杜比全景声 2 号厅完成年度校准，左后环绕声道增益由 -2.5dB 调回 0dB，低频下限维持 32Hz。</p>
+            </li>
+            <li>
+              <time datetime="2026-11-02">11 月 2 日</time>
+              <strong>会员积分兑换暂停</strong>
+              <p>积分商城改版，暂停至 11 月 12 日；期间购票仍正常累计积分，1 元记 1 分。</p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="sec" id="categories" aria-labelledby="catTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Channels</p>
+              <h2 id="catTitle">按厅型与放映需求找片</h2>
+            </div>
+          </div>
+          <div class="cat-grid">
+            <a class="cat-item" href="/#overview"><b>激光 IMAX 巨幕</b><span>1 厅 · 388 座</span></a>
+            <a class="cat-item" href="/#overview"><b>杜比全景声厅</b><span>2 厅 · 176 座</span></a>
+            <a class="cat-item" href="/#overview"><b>激光 2K 小厅</b><span>2 厅 · 122 座</span></a>
+            <a class="cat-item" href="/#overview"><b>亲子软座厅</b><span>1 厅 · 96 座</span></a>
+            <a class="cat-item" href="/#featured"><b>午夜场次</b><span>22:00 后开场</span></a>
+            <a class="cat-item" href="/#featured"><b>原声字幕场</b><span>外语片默认场</span></a>
+            <a class="cat-item" href="/#guide"><b>会员购票入口</b><span>积分与折扣</span></a>
+            <a class="cat-item" href="/#faq"><b>退改签规则</b><span>两档时限</span></a>
+            <a class="cat-item" href="/#comments"><b>无障碍座席</b><span>每厅 4 席</span></a>
+            <a class="cat-item" href="/#latest"><b>今日剩余场次</b><span>34 场统计</span></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="sec" id="deep" aria-labelledby="deepTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Analysis</p>
+              <h2 id="deepTitle">深度解析：小厅二刷的票价逻辑站得住吗</h2>
+            </div>
+          </div>
+          <article class="analysis">
+            <p class="lead-p">一个可被反驳的判断：在八度电影院两店之间，星港店激光 2K 小厅的性价比优势，主要来自“场次密度”而非票价本身，一旦工作日白天场被砍掉，这个优势会立刻消失。</p>
+
+            <h3>判断拆解：三组可核对数据</h3>
+            <table class="compare">
+              <caption style="caption-side:top;text-align:left;font-size:.8rem;color:#6b7684;padding-bottom:6px">11 月 8 日两店同片票价与场次对照（元 / 场）</caption>
+              <thead>
+                <tr><th scope="col">对照项</th><th scope="col">江北店 2 号厅（杜比）</th><th scope="col">星港店 1 号厅（激光 2K）</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>《雪线之上》最低票价</td><td>68</td><td>——（无排片）</td></tr>
+                <tr><td>《雾港回声》最低票价</td><td>62</td><td>49</td></tr>
+                <tr><td>11:00 前场次数</td><td>1</td><td>2</td></tr>
+                <tr><td>21:00 后场次数</td><td>2</td><td>1</td></tr>
+                <tr><td>散场至末班公交间隔</td><td>21 分钟</td><td>34 分钟</td></tr>
+              </tbody>
+            </table>
+            <p>票价差最大的是《雾港回声》的 18:20 场：星港店 49 元，江北店同日 62 元，差 13 元。但星港店当天只有 3 场，其中 2 场在 15:00 前，一旦错过就只能等 21:30。江北店 5 场覆盖 11:40 到 22:20，选择宽度更足——这正是小厅“便宜”的实际代价：便宜的场次集中在白天，晚间选择被压缩。</p>
+
+            <div class="callout">
+              <p><strong>可反驳点：</strong>若把交通成本算进去，星港店的 13 元票价差会被地铁 2 元往返加 34 分钟候车时间部分抵消。以时薪折算，单程多出的 20 分钟对部分观众等于 6—10 元，实际差距缩到 3—5 元。判断是否成立，取决于观众把“时间”定价为多少。</p>
+            </div>
+
+            <h3>事实、回应、转述与推测分层</h3>
+            <div class="fact-check">
+              <div class="fc fact">
+                <b>事实</b>
+                <p>11 月 6 日《雾港回声》星港店撤下 09:50 与 15:10 两场，影院短信通知已购票观众，退款平均 2 小时 40 分到账。</p>
+              </div>
+              <div class="fc reply">
+                <b>影院回应</b>
+                <p>排片组在公众号留言区称，撤场原因是“上座率低于 12% 的场次统一并档”，并承诺 11 月 13 日前重排一次夜间场。</p>
+              </div>
+              <div class="fc repeat">
+                <b>观众转述</b>
+                <p>豆瓣同名条目下，用户“夜航船 1993”写道：星港店 2 号厅的后排视野被柱子挡了左侧约六分之一画面。</p>
+              </div>
+              <div class="fc guess">
+                <b>推测</b>
+                <p>若 11 月 13 日重排的夜间场仍落在 21:30 之后，散场接驳会与末班公交冲突，实际可售座位可能只用到七成。</p>
+              </div>
+            </div>
+
+            <h3>规则前后变化：退改签的两档时限</h3>
+            <p>10 月 20 日之前，八度电影院两店统一执行“开场前 60 分钟免费退、60 分钟内收 10% 手续费”。11 月 1 日起改为两档：开场前 30 分钟以上免费退改；30 分钟至 15 分钟收 20%；15 分钟以内不可退。以 68 元票计算，第二档手续费为 13.6 元，比旧规则多收 6.8 元。客服在 11 月 3 日的回复中说明，调整与新版购票系统上线同步，旧订单按原规则执行。</p>
+            <p>把这项变化放回上面的票价对比：如果观众习惯临场决定，新规则下 68 元票在开场前 20 分钟退票只能拿回 54.4 元，13 元票价差在江北店这里被进一步放大——小厅的便宜，需要观众提前 30 分钟以上锁定行程才真正兑现。</p>
+          </article>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="sec" id="guide" aria-labelledby="guideTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Guide</p>
+              <h2 id="guideTitle">从选座到散场的六步流程</h2>
+            </div>
+            <p class="sec-desc">按江北店与星港店的实际动线整理，含取票机位置与检票口分流。</p>
+          </div>
+          <ol class="steps">
+            <li><b>按片长选场次</b><p>152 分钟的《雪线之上》加映前广告共 156 分钟；若接 21:30 场，散场接近 0 点，星港店末班公交 22:50，需改打车。</p></li>
+            <li><b>确定厅型再选座</b><p>1 号厅 IMAX 第 7—10 排居中最佳；2 号厅杜比因 64 声道环绕，坐第 6 排偏左 3 座音场更均衡。</p></li>
+            <li><b>线上购票与选座锁位</b><p>小程序选座后 15 分钟内付款，超时释放。会员价与普通价差 4—8 元，积分 1 元记 1 分。</p></li>
+            <li><b>到店取票</b><p>江北店取票机在扶梯口右侧 3 台，星港店在检票口左侧 2 台；二维码取票失败可到人工柜台凭订单号打印。</p></li>
+            <li><b>检票与入场</b><p>开场前 10 分钟开检。亲子场分批入场，A—F 排提前 10 分钟。迟到观众由场务引导从侧门入场，不补放已过片段。</p></li>
+            <li><b>散场与退改</b><p>散场从两侧通道分流；需退改的订单在开场前 30 分钟以上于小程序内操作，免手续费，款项原路返回。</p></li>
+          </ol>
+        </section>
+
+        <!-- 7 FAQ -->
+        <section class="sec" id="faq" aria-labelledby="faqTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">FAQ</p>
+              <h2 id="faqTitle">购票与观影常见问题</h2>
+            </div>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>杜比全景声厅和激光 IMAX 厅看同一部片差在哪？</summary>
+              <div class="ans"><p>画面比例不同：IMAX 版《雪线之上》为 1.90:1，杜比厅为 2.39:1，山顶雪崩段上下各多出约 9% 画面。声音上杜比厅有 64 声道，风的方位感更细；IMAX 厅低频更足，座椅能感到 40Hz 以下的震动。两者票价差 6—10 元。</p></div>
+            </details>
+            <details>
+              <summary>开场前 20 分钟还能退《雾港回声》的票吗？</summary>
+              <div class="ans"><p>可以，但按 11 月 1 日生效的新规则收 20% 手续费。49 元票退 39.2 元，62 元票退 49.6 元。开场前 15 分钟以内不可退。旧订单按原 60 分钟规则执行。</p></div>
+            </details>
+            <details>
+              <summary>亲子软座厅适合几岁孩子，增高垫怎么领？</summary>
+              <div class="ans"><p>亲子场建议 4 岁以上、能坐满 98 分钟的儿童。增高垫共 12 张，检票口旁置物架自取，先到先得；软座前两排可调靠背，家长可与孩子连座。</p></div>
+            </details>
+            <details>
+              <summary>星港店 2 号厅后排真的会被柱子挡视线吗？</summary>
+              <div class="ans"><p>G 排至 H 排最左侧 2 个座位受承重柱影响，遮挡左侧约六分之一画面。选座图上这两席已标注“受限视野”，票价低 5 元。其余座位不受影响。</p></div>
+            </details>
+            <details>
+              <summary>会员积分什么时候恢复兑换？</summary>
+              <div class="ans"><p>积分商城改版暂停至 11 月 12 日。期间购票仍累计积分，1 元记 1 分；11 月 13 日起可兑换爆米花套餐与免费票，兑换比例暂未公布。</p></div>
+            </details>
+            <details>
+              <summary>原声字幕场和国语配音场怎么区分？</summary>
+              <div class="ans"><p>外语片默认排原声字幕场，购票页标题后标“原声”。国语配音场仅在工作日 11:00 前与周末早场安排，目前《竹林里的小号手》两场亲子场均为国语配音。</p></div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8 用户评论 -->
+        <section class="sec" id="comments" aria-labelledby="cmTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Reviews</p>
+              <h2 id="cmTitle">观众评论：具体到座位和场次</h2>
+            </div>
+            <p class="sec-desc">评论来自购票后 7 天内的评价入口，按时间排列。</p>
+          </div>
+          <div class="comments">
+            <div class="cm">
+              <div class="who"><span class="avatar">周</span><div><div class="name">周叙白</div><div class="when">11 月 7 日 23:12</div></div></div>
+              <p>江北店 1 号厅《雪线之上》22:10 场，第 8 排正中。雪崩那段上下画面确实是完整画幅，值回 68 元。</p>
+              <span class="bind">《雪线之上》· 1 号厅</span>
+            </div>
+            <div class="cm">
+              <div class="who"><span class="avatar">林</span><div><div class="name">林见野</div><div class="when">11 月 7 日 20:05</div></div></div>
+              <p>星港店 2 号厅 H 排左 2，柱子挡住左侧一块，字幕偶尔被切。选座图有标注，算我下单太快。</p>
+              <span class="bind">星港店 2 号厅 · 受限视野席</span>
+            </div>
+            <div class="cm">
+              <div class="who"><span class="avatar">陈</span><div><div class="name">陈默</div><div class="when">11 月 6 日 21:40</div></div></div>
+              <p>《雾港回声》被撤场后短信来得挺快，退款两小时到账。但重排到 21:30 的话，散场回程有点麻烦。</p>
+              <span class="bind">《雾港回声》· 撤场退款</span>
+            </div>
+            <div class="cm">
+              <div class="who"><span class="avatar">许</span><div><div class="name">许小姐</div><div class="when">11 月 6 日 16:18</div></div></div>
+              <p>亲子场提前入场这招好，带孩子进场不用挤过道。增高垫拿了 2 张，10:30 场没缺。</p>
+              <span class="bind">《竹林里的小号手》· 亲子场</span>
+            </div>
+            <div class="cm">
+              <div class="who"><span class="avatar">阿</span><div><div class="name">阿岚</div><div class="when">11 月 5 日 22:31</div></div></div>
+              <p>杜比 2 号厅校准后环绕声确实清楚，但映前广告 3 分 20 秒有点长，正片前坐等。</p>
+              <span class="bind">江北店 2 号厅 · 音响校准</span>
+            </div>
+            <div class="cm">
+              <div class="who"><span class="avatar">吴</span><div><div class="name">吴止</div><div class="when">11 月 4 日 19:02</div></div></div>
+              <p>新退改规则有点狠，开场前 20 分钟退 62 元票只拿回 49.6 元。之前 60 分钟免费，现在得提前算好。</p>
+              <span class="bind">退改签新规 · 11 月 1 日生效</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9 相关资讯 -->
+        <section class="sec" id="news" aria-labelledby="newsTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">News</p>
+              <h2 id="newsTitle">行业与本地放映资讯</h2>
+            </div>
+          </div>
+          <div class="news-grid">
+            <article class="news-item">
+              <div class="src"><span class="chip">行业</span><span>中国电影发行放映协会 · 11 月 5 日</span></div>
+              <h3>全国艺术电影放映联盟新增 42 家影院</h3>
+              <p>名单覆盖 17 个城市，新增影厅多配激光放映机；本批次未包含八度电影院两店。</p>
+            </article>
+            <article class="news-item">
+              <div class="src"><span class="chip">本地</span><span>江北区文旅局 · 11 月 4 日</span></div>
+              <h3>江北商圈夜间公交延至 23:30</h3>
+              <p>涉及 3 条线路，与江北店 1 号厅 23:40 散场存在 10 分钟衔接缺口，影院称正与公交公司协商。</p>
+            </article>
+            <article class="news-item">
+              <div class="src"><span class="chip">技术</span><span>放映技术周刊 · 11 月 2 日</span></div>
+              <h3>激光光源影厅亮度衰减检测方法更新</h3>
+              <p>新方法把测量点从 9 点扩至 13 点，要求银幕中心亮度不低于 48cd/m²；八度 1 号厅 10 月检测值为 52cd/m²。</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 10 相关推荐 -->
+        <section class="sec" id="related" aria-labelledby="relTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Related</p>
+              <h2 id="relTitle">相关推荐：按需求直达</h2>
+            </div>
+          </div>
+          <div class="tag-cloud">
+            <a href="/#latest">11 月 8 日剩余场次</a>
+            <a href="/#featured">雪线之上 IMAX 画幅差异</a>
+            <a href="/#faq">雾港回声退改签手续费</a>
+            <a href="/#guide">亲子软座厅增高垫领取</a>
+            <a href="/#overview">杜比全景声厅 64 声道</a>
+            <a href="/#comments">星港店 2 号厅受限视野席</a>
+            <a href="/#latest">会员积分兑换恢复时间</a>
+            <a href="/#deep">小厅二刷票价逻辑</a>
+            <a href="/#guide">江北店取票机位置</a>
+            <a href="/#news">夜间公交接驳缺口</a>
+            <a href="/#overview">激光 2K 厅票价区间</a>
+            <a href="/#faq">原声字幕场与国语配音场</a>
+          </div>
+        </section>
+
+        <!-- 11 榜单 -->
+        <section class="sec" id="ranking" aria-labelledby="rankTitle">
+          <div class="sec-head">
+            <div>
+              <p class="sec-kicker">Ranking</p>
+              <h2 id="rankTitle">本周上座率榜单（11 月 2 日—8 日）</h2>
+            </div>
+            <p class="sec-desc">数据取两店实际出票数与可售座位数之比，含预售。</p>
+          </div>
+          <ol class="rank">
+            <li><span class="no">01</span><span class="t"><b>《雪线之上》· 江北店 1 号厅</b><span>IMAX 版 152 分钟</span></span><span class="v">上座率 86%</span></li>
+            <li><span class="no">02</span><span class="t"><b>《竹林里的小号手》· 星港店 3 号厅</b><span>亲子场 98 分钟</span></span><span class="v">上座率 74%</span></li>
+            <li><span class="no">03</span><span class="t"><b>《雪线之上》· 江北店 2 号厅</b><span>杜比全景声版</span></span><span class="v">上座率 68%</span></li>
+            <li><span class="no">04</span><span class="t"><b>《雾港回声》· 江北店 3 号厅</b><span>悬疑 126 分钟</span></span><span class="v">上座率 51%</span></li>
+            <li><span class="no">05</span><span class="t"><b>《雾港回声》· 星港店 2 号厅</b><span>18:20 单场贡献 61%</span></span><span class="v">上座率 43%</span></li>
+          </ol>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side" aria-label="侧栏导航与信息">
+        <div class="side-card">
+          <h3>本页栏目</h3>
+          <nav class="side-nav" id="sideNav" aria-label="栏目快速跳转">
+            <a href="/#overview">影厅概览</a>
+            <a href="/#featured">本月精选</a>
+            <a href="/#latest">排片变动</a>
+            <a href="/#categories">片单分类</a>
+            <a href="/#deep">深度解析</a>
+            <a href="/#guide">购票指南</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#comments">观众评论</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#related">相关推荐</a>
+            <a href="/#ranking">上座率榜</a>
+          </nav>
+        </div>
+        <div class="side-card">
+          <h3>今日提示</h3>
+          <p style="font-size:.84rem;color:#3d4a58;margin:0">11 月 8 日《雪线之上》仅剩 22:10 一场 37 席；星港店亲子场 14:00 已售 81 张，余 15 张。</p>
+        </div>
+        <div class="side-card">
+          <h3>热门搜索词</h3>
+          <div class="tag-row">
+            <span class="chip">IMAX 画幅</span>
+            <span class="chip">杜比 64 声道</span>
+            <span class="chip">退改签两档</span>
+            <span class="chip">亲子增高垫</span>
+            <span class="chip">受限视野席</span>
+            <span class="chip">原声字幕场</span>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="f-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="八度电影院标志">
+            <rect width="64" height="64" rx="14" fill="#152a3e"/>
+            <circle cx="32" cy="32" r="17" fill="none" stroke="#e8b04b" stroke-width="3.5"/>
+            <circle cx="32" cy="32" r="5.5" fill="#e8b04b"/>
+            <circle cx="32" cy="15" r="2.8" fill="#e8b04b"/>
+            <circle cx="32" cy="49" r="2.8" fill="#e8b04b"/>
+            <circle cx="15" cy="32" r="2.8" fill="#e8b04b"/>
+            <circle cx="49" cy="32" r="2.8" fill="#e8b04b"/>
+          </svg>
+          <b>八度电影院</b>
+        </div>
+        <p class="f-note">两店八厅的排片与硬件说明，按厅型、场次与退改规则组织内容。<br>更新时间：<strong>2026 年 11 月 8 日</strong>，对应正文排片变动与音响校准两条可核对更新项。</p>
+      </div>
+      <div>
+        <h4>栏目入口</h4>
+        <ul>
+          <li><a href="/#overview">影厅概览</a></li>
+          <li><a href="/#featured">本月精选</a></li>
+          <li><a href="/#latest">排片变动</a></li>
+          <li><a href="/#categories">片单分类</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>观影服务</h4>
+        <ul>
+          <li><a href="/#guide">购票与取票流程</a></li>
+          <li><a href="/#faq">退改签常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#ranking">上座率榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容说明</h4>
+        <ul>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+        </ul>
+        <p class="f-note" style="margin-top:10px">示例数据说明：排片、票价与上座率为演示用示例条目，非实时售票数据。</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 八度电影院 · 江北店 / 星港店</span>
+      <span>内容示例 · 排片以门店当日公告为准</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到页面顶部" title="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mainNav.classList.contains('open')){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  /* 站内搜索：本地索引 */
+  var index = [
+    {t:'影厅概览：激光 IMAX 厅 388 座', k:'影厅概览 imax 激光 388座 江北店', id:'overview'},
+    {t:'杜比全景声厅 64 声道', k:'杜比 全景声 64声道 176座', id:'overview'},
+    {t:'星港店激光 2K 厅票价 39—59 元', k:'激光2k 小厅 票价 星港店', id:'overview'},
+    {t:'亲子软座厅与增高垫', k:'亲子 软座 增高垫 儿童', id:'overview'},
+    {t:'《雪线之上》IMAX 与杜比画幅差异', k:'雪线之上 imax 画幅 152分钟', id:'featured'},
+    {t:'《雾港回声》排片压缩到 3 场', k:'雾港回声 悬疑 126分钟 排片', id:'featured'},
+    {t:'《竹林里的小号手》亲子场', k:'竹林里的小号手 动画 亲子场 98分钟', id:'featured'},
+    {t:'11 月 8 日 22:10 加场', k:'加场 雪线之上 22:10 11月8日', id:'latest'},
+    {t:'雾港回声撤场退款', k:'撤场 退款 雾港回声 11月6日', id:'latest'},
+    {t:'会员积分兑换暂停至 11 月 12 日', k:'积分 兑换 会员 暂停', id:'latest'},
+    {t:'退改签两档时限规则', k:'退改签 手续费 30分钟 15分钟', id:'faq'},
+    {t:'小厅二刷票价逻辑深度解析', k:'深度解析 票价 二刷 性价比', id:'deep'},
+    {t:'上座率榜单', k:'榜单 上座率 排名', id:'ranking'},
+    {t:'星港店受限视野席', k:'受限视野 柱子 星港店 2号厅', id:'comments'},
+    {t:'原声字幕场与国语配音场', k:'原声 字幕 配音 国语', id:'faq'}
+  ];
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var box = document.getElementById('searchResult');
+
+  function render(q){
+    var key = q.trim().toLowerCase();
+    if(!key){
+      box.classList.remove('show');
+      box.innerHTML = '';
+      return;
+    }
+    var hits = index.filter(function(item){
+      return (item.t + ' ' + item.k).toLowerCase().indexOf(key) !== -1;
+    }).slice(0,6);
+    if(hits.length === 0){
+      box.innerHTML = '<p class="none">没有找到与“' + escapeHtml(q) + '”相关的片名或厅型，可试试“IMAX”“退改签”“亲子场”。</p>';
+    }else{
+      box.innerHTML = hits.map(function(h){
+        return '<a href="/#' + h.id + '">' + escapeHtml(h.t) + '</a>';
+      }).join('');
+    }
+    box.classList.add('show');
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      render(input.value);
+    });
+    input.addEventListener('input', function(){ render(input.value); });
+    document.addEventListener('click', function(e){
+      if(!form.contains(e.target) && !box.contains(e.target)){
+        box.classList.remove('show');
+      }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var links = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = links.map(function(a){
+    return document.querySelector(a.getAttribute('href').replace('/#','#'));
+  });
+  function onScroll(){
+    var pos = window.scrollY + 170;
+    var cur = -1;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos){ cur = i; }
+    });
+    links.forEach(function(a,i){
+      a.classList.toggle('cur', i === cur);
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "八度电影院新版影院",
+  "description": "影厅排片、杜比全景声与激光厅体验、会员购票规则和观影动线说明。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "杜比全景声厅和激光 IMAX 厅看同一部片差在哪？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "画面比例不同：IMAX 版《雪线之上》为 1.90:1，杜比厅为 2.39:1，山顶雪崩段上下各多出约 9% 画面。声音上杜比厅有 64 声道，风的方向感更细；IMAX 厅低频更足。两者票价差 6—10 元。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "开场前 20 分钟还能退《雾港回声》的票吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以，但按 11 月 1 日生效的新规则收 20% 手续费。49 元票退 39.2 元，62 元票退 49.6 元。开场前 15 分钟以内不可退。旧订单按原 60 分钟规则执行。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "亲子软座厅适合几岁孩子，增高垫怎么领？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "亲子场建议 4 岁以上、能坐满 98 分钟的儿童。增高垫共 12 张，检票口旁置物架自取，先到先得；软座前两排可调靠背，家长可与孩子连座。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "星港店 2 号厅后排真的会被柱子挡视线吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "G 排至 H 排最左侧 2 个座位受承重柱影响，遮挡左侧约六分之一画面。选座图上这两席已标注受限视野，票价低 5 元。其余座位不受影响。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "会员积分什么时候恢复兑换？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "积分商城改版暂停至 11 月 12 日。期间购票仍累计积分，1 元记 1 分；11 月 13 日起可兑换爆米花套餐与免费票，兑换比例暂未公布。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "原声字幕场和国语配音场怎么区分？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "外语片默认排原声字幕场，购票页标题后标原声。国语配音场仅在工作日 11:00 前与周末早场安排，目前《竹林里的小号手》两场亲子场均国语配音。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+                </html>
